@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void myFunction() {
+  printf("My name is sanika kalyani\n");
+}
+
+int main() {
+  myFunction(); 
+  myFunction(); 
+  return 0;
+}
