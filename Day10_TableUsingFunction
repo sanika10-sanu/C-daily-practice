@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+
+void printMultiplicationTable(int num, int range) {
+    printf("Multiplication Table for %d (up to %d):\n", num, range);
+    for (int i = 1; i <= range; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+}
+
+int main() {
+    int number;
+    int tableRange;
+
+   
+    printf("Enter a number to generate its multiplication table: ");
+    scanf("%d", &number);
+
+   
+    printf("Enter the range for the table (e.g., 10 for 1 to 10): ");
+    scanf("%d", &tableRange);
+
+ 
+    printMultiplicationTable(number, tableRange);
+
+    return 0;
+}
